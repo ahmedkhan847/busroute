@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getting Started - Materialize</title>
+    <!-- Favicons-->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+	<script>
+      window.liveSettings = {
+        api_key: "a0b49b34b93844c38eaee15690d86413",
+        picker: "bottom-right",
+        detectlang: true,
+        dynamic: true,
+        autocollect: true
+      };
+    </script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+    </script>
+  </head>
+    <body>
+    <header>
+      <ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><h4>Options</h4>
+          </li>  
+        <li class="bold"><a href="index.html" class="waves-effect waves-teal">Home</a></li>
+        <li class="bold"><a href="search_page.html" class="waves-effect waves-teal">Search</a></li>
+      </ul>
+    </header>
+    <main>
+	<nav class="nav-class">
+    <div class="nav-wrapper" style="">
+      <ul id="nav-mob" class="right">
+        <li><a href="search_page.html"><i class="mdi-action-search"></i></a></li>
+      </ul>
+	  <ul class="left">
+	  <li><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a></li>
+	  <li>Karachi Bus Routes</li>
+	  </ul>
+    </div>
+  </nav>
+  
+
+  <div class="row">
+  <div class="col s6">
+  <a class=" btn modal-trigger left waves-light waves-light btn-color" href="#busmodal">Show Buses</a>
+  </div>
+  <div class="col s6">
+  <a class="btn waves-effect waves-light modal-trigger right btn-color" href="#directionmodel">Show Direction</a>
+  </div>
+  </div>
+  <!-- Bus Modal Structure -->
+  <div id="busmodal" class="modal">
+    <div class="modal-content">
+      <h5> Select Bus To Show The Route </h5>
+      <ul class="collection" id="lists">
+        
+      </ul>
+            
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+	<!--Direction Modal Structure -->
+  <div id="directionmodel" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Directions</h4>
+     <div id="directionpanel"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  
+  </main>
+  <div class="clears"></div>
+  <div id="map-holder"> 
+          
+          
+          </div>
+        <!--  Scripts-->
+        <script src="code.jquery.com/jquery-2.1.1.min.js"></script>
+ <!--    <script src="js/jquery.timeago.min.js"></script>  
+    <script src="js/prism.js"></script>
+  -->   <script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+<script>
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+</script>
+<script src="js/map.js"></script>
+    </body>
+
+</html>

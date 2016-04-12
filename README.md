@@ -1,2 +1,2 @@
-# busroute
-A bus route system app for Karachi through which one can get route of a bus from one place to another
+# Bus Route App
+A bus route system cordova base app for Karachi. Using this app they can easily get route for a bus from one location to another

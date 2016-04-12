@@ -1,0 +1,31 @@
+.nav-class{
+background-color: #69D2E7;
+
+}
+.main-class{
+background-color: lightblue;
+}
+
+.hovercolor
+{
+background-color:lightblue;
+	
+}
+
+.btn-color{
+	
+	background-color:#f3989b;
+}
+#map-holder
+{
+	position: absolute;
+	top:13%;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	
+}
+.clears
+{
+	clear:both;
+}
